@@ -114,6 +114,7 @@ export default createGlobalStyle`
           height: 100%;
           position: relative;
           scroll-snap-align: start;
+          max-width: unset;
         }
 
         #content{

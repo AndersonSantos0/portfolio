@@ -12,6 +12,7 @@ export const ProfileAside = styled.aside`
   flex: 1;
   max-height: 100vh;
   min-height: 100vh;
+  max-width: 450px;
   background-color: var(--subBackground);
   display: flex;
   flex-direction: column;
