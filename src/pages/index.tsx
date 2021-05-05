@@ -125,7 +125,7 @@ const Home: React.FC = () => {
             <h1>Formação</h1>
             <FormationGrid />
             <h1 ref={objectivesRef} id="objectives">
-              Objetivo
+              Objetivos
             </h1>
             <p>
               Tenho o objetivo de crescer na área de{` `}
@@ -156,10 +156,10 @@ const Home: React.FC = () => {
               <span className="empashis">desenvolvimento</span>.
             </p>
             <h1 ref={contactRef} id="contact">
-              Contato
+              Contatos
             </h1>
             <ContactGrid />
-            <h1>Email</h1>
+            <h1>Email (em desenvolvimento)</h1>
             <EmailSection />
           </ContentContainer>
         </Content>

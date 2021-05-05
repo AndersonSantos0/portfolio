@@ -1,9 +1,13 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react'
 import Image from 'next/image'
+import { FiGlobe, FiGithub } from 'react-icons/fi'
 import {
   ProjectContainer,
   ProjectContent,
   ProjectCover,
+  ProjectCoverActions,
   ProjectDescription,
   ProjectInfos,
   ProjectLangs,
@@ -19,6 +23,8 @@ interface ProjectProps {
   project: string
   title?: string
   description?: string
+  repository?: string
+  link?: string
   langs: string[]
   platforms: platformsType[]
   goods?: goodsType[]
@@ -30,7 +36,9 @@ const Project: React.FC<ProjectProps> = ({
   description,
   langs,
   platforms,
-  goods
+  goods,
+  repository,
+  link
 }) => (
   <ProjectContainer>
     <ProjectCover>
@@ -42,6 +50,20 @@ const Project: React.FC<ProjectProps> = ({
         src={`/projects/${project}.png`}
         alt={project}
       />
+      <ProjectCoverActions className="project-actions">
+        {repository && (
+          <div onClick={() => window.open(repository, `_blank`)}>
+            <FiGithub size="1.5rem" color="#fff" />
+            <p>Repositório</p>
+          </div>
+        )}
+        {link && (
+          <div onClick={() => window.open(link, `_blank`)}>
+            <FiGlobe size="1.5rem" color="#fff" />
+            <p>Web</p>
+          </div>
+        )}
+      </ProjectCoverActions>
     </ProjectCover>
     <ProjectContent>
       <ProjectTitle>{title || project}</ProjectTitle>

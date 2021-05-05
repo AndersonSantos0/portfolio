@@ -4,14 +4,14 @@ export const EmailSectionContainer = styled.div`
   > form {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-    grid-gap: 1rem 2rem;
+    grid-gap: 1.5rem 2rem;
   }
 `
 
 export const EmailSectionInputs = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   flex: 1;
 
   > input {

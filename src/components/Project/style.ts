@@ -7,15 +7,60 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   background-color: var(--subBackground);
   border-radius: 8px;
+  transition: transform 0.4s;
+
+  :hover {
+    transform: scale(1.05);
+  }
+
+  :hover .project-actions {
+    opacity: 1 !important;
+  }
 `
 
 export const ProjectCover = styled.div`
   border-radius: 8px;
   background-color: var(--background);
+  position: relative;
   display: flex;
 
   img {
     border-radius: 8px;
+  }
+`
+
+export const ProjectCoverActions = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0;
+  transition: opacity 0.4s;
+
+  > div {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--primary);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+
+    > p {
+      position: absolute;
+      font-family: Inter;
+      color: var(--text);
+      bottom: -2rem;
+      margin-left: 2px;
+    }
   }
 `
 
