@@ -7,7 +7,7 @@ export const EmailSectionContainer = styled.div`
 
     > div {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
       grid-gap: 1.5rem 2rem;
     }
 
