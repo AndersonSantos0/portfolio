@@ -59,7 +59,7 @@ export default createGlobalStyle`
         position: relative;
 
         .hamburger{
-          display: flex;
+          display: flex !important;
         }
 
         ul.active{
@@ -68,16 +68,16 @@ export default createGlobalStyle`
 
         ul{
           position: absolute;
-          display: block;
+          display: block !important;
           background-color: var(--subText);
           top: 0;
           left: -60%;
-          height: 100vh;
+          height: 100vh !important;
           width: 60%;
           transition: left .4s;
 
           li {
-            height: 5rem;
+            height: 5rem !important;
 
             a{
               color: var(--background);
@@ -106,7 +106,7 @@ export default createGlobalStyle`
         }
 
         .downArrow{
-          display: block;
+          display: block !important;
         }
 
         aside{
