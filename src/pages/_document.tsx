@@ -42,6 +42,10 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+          <meta
+            property="og:image"
+            content="https://portifolio-jade.vercel.app/assets/image/preview.png"
+          />
           <title>Portifolio</title>
         </Head>
         <body>
