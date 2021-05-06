@@ -5,6 +5,21 @@ import { ProjectsGridContainer } from './style'
 const ProjectsGrid: React.FC = () => (
   <ProjectsGridContainer>
     <Project
+      project="portifolio"
+      title="Portifolio"
+      description="Meu portifolio"
+      repository="https://github.com/AndersonSantos0/portifolio"
+      langs={[
+        `React.js`,
+        `Javascript`,
+        `Typescript`,
+        `Next.js`,
+        `Styled-components`
+      ]}
+      platforms={[`web`, `github`]}
+      goods={[`eslint`, `prettier`]}
+    />
+    <Project
       project="podcastr"
       title="Podcastr"
       description="Projeto do evento Next Level Week #5 da RocketSeat"
