@@ -159,7 +159,7 @@ const Home: React.FC = () => {
               Contatos
             </h1>
             <ContactGrid />
-            <h1>Email (em desenvolvimento)</h1>
+            <h1>Email</h1>
             <EmailSection />
           </ContentContainer>
         </Content>
