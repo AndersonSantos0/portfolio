@@ -28,7 +28,11 @@ export const SkillItem: React.FC<SkillItemProps> = ({
 const Skills: React.FC<SkillsProps> = ({ skills }) => (
   <SkillsContainer>
     {skills.map(skill => (
-      <SkillItem background={skill.background} skill={skill.skill} />
+      <SkillItem
+        key={skill.id}
+        background={skill.background}
+        skill={skill.skill}
+      />
     ))}
   </SkillsContainer>
 )

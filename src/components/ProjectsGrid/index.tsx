@@ -11,6 +11,7 @@ const ProjectsGrid: React.FC<NewProjectGridProps> = ({ projects }) => (
   <ProjectsGridContainer>
     {projects.map(project => (
       <Project
+        key={project.id}
         project={project.project}
         title={project.title}
         description={project.description}

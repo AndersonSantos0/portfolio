@@ -16,6 +16,7 @@ export type skillsType =
   | 'jQuery'
 
 export type skillType = {
+  id: number
   skill: skillsType
   background?: string
 }
