@@ -1,9 +1,10 @@
 /* eslint-disable consistent-return */
-import React, { useRef, useState } from 'react'
+import { GoodSkillsData, MainSkillsData, OtherSkillsData } from '@/data/skills'
+import { ProjectsData } from '@/data/projects'
 
-import Menu from '@/components/menu'
-import User from '@/components/user'
-import { GoodsSkils, MainSkills, OthersSkills } from '@/components/skills'
+import { useRef, useState } from 'react'
+import Lottie from 'react-lottie'
+
 import {
   ContentSection,
   Content,
@@ -17,7 +18,10 @@ import {
   ProfileSeparator,
   Screen
 } from '@/styles/Home'
-import Lottie from 'react-lottie'
+
+import Menu from '@/components/menu'
+import User from '@/components/user'
+import Skills from '@/components/skills'
 import ProjectsGrid from '@/components/ProjectsGrid'
 import CompanyCard from '@/components/CompanyCard'
 import FormationGrid from '@/components/FormationGrid'
@@ -101,15 +105,15 @@ const Home: React.FC = () => {
         <Content onScroll={e => getActualSection(e.currentTarget.scrollTop)}>
           <ContentContainer>
             <h1 id="skills">Habilidades principais</h1>
-            <MainSkills />
+            <Skills skills={MainSkillsData} />
             <h1>Boas práticas</h1>
-            <GoodsSkils />
+            <Skills skills={GoodSkillsData} />
             <h1>Outras</h1>
-            <OthersSkills />
+            <Skills skills={OtherSkillsData} />
             <h1 ref={projectsRef} id="projects">
               Projetos
             </h1>
-            <ProjectsGrid />
+            <ProjectsGrid projects={ProjectsData} />
             <h1 ref={experienceRef} id="experience">
               Experiência
             </h1>

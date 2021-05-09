@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FiGlobe, FiGithub } from 'react-icons/fi'
+import { goodsType, platformsType } from '@/@types/projects'
 import {
   ProjectContainer,
   ProjectContent,
@@ -15,9 +16,6 @@ import {
 } from './style'
 import ProjectPlatformView from '../ProjectPlatformsView'
 import ProjectGoodsView from '../ProjectGoodsView'
-
-type goodsType = 'eslint' | 'prettier'
-type platformsType = 'desktop' | 'web' | 'github' | 'mobile'
 
 interface ProjectProps {
   project: string

@@ -1,5 +1,4 @@
 import React from 'react'
-import { lighten } from 'polished'
 
 interface PrettierIconProps {
   color: string
