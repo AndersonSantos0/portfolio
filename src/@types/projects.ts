@@ -1,5 +1,5 @@
 export type projectsType =
-  | 'portifolio'
+  | 'portfolio'
   | 'podcastr'
   | 'podcastr-electron'
   | 'docket-form'

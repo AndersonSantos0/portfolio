@@ -3,10 +3,10 @@ import { ProjectType } from '@/@types/projects'
 export const ProjectsData: ProjectType[] = [
   {
     id: 1,
-    project: `portifolio`,
-    title: `Portifolio`,
-    description: `Meu portifolio`,
-    repository: `https://github.com/AndersonSantos0/portifolio`,
+    project: `portfolio`,
+    title: `Portfolio`,
+    description: `Meu portfolio`,
+    repository: `https://github.com/AndersonSantos0/portfolio`,
     langs: [
       `React.js`,
       `Javascript`,
