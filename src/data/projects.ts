@@ -20,7 +20,8 @@ export const ProjectsData: ProjectType[] = [
     project: `podcastr`,
     title: `Podcastr`,
     description: `Projeto do evento Next Level Week #5 da RocketSeat`,
-    repository: `https://github.com/AndersonSantos0/electron-podcastr`,
+    repository: `https://github.com/AndersonSantos0/nlw-podcastr`,
+    link: `https://podcastr-delta.vercel.app`,
     langs: [
       `React.js`,
       `Javascript`,
@@ -34,9 +35,9 @@ export const ProjectsData: ProjectType[] = [
   {
     project: `podcastr-electron`,
     title: `Podcastr electron`,
+    repository: `https://github.com/AndersonSantos0/electron-podcastr`,
     description: `Versão desktop do Podcastr`,
-    repository: `https://github.com/AndersonSantos0/nlw-podcastr`,
-    link: `https://podcastr-delta.vercel.app`,
+
     langs: [
       `Electron`,
       `React.js`,
