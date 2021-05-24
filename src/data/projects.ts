@@ -3,6 +3,22 @@ import { ProjectType } from '@/@types/projects'
 export const ProjectsData: ProjectType[] = [
   {
     id: 1,
+    project: `game-room`,
+    title: `Game room`,
+    description: `Uma plataforma de jogos`,
+    link: `https://game-room.vercel.app`,
+    langs: [
+      `React.js`,
+      `Javascript`,
+      `Typescript`,
+      `Next.js`,
+      `Styled-components`,
+      `igdb API`
+    ],
+    platforms: [`web`, `github`]
+  },
+  {
+    id: 1,
     project: `portfolio`,
     title: `Portfolio`,
     description: `Meu portfolio`,

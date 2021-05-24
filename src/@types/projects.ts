@@ -5,6 +5,7 @@ export type projectsType =
   | 'docket-form'
   | 'weboffice-renewed'
   | 'weboffice'
+  | 'game-room'
 
 export type goodsType = 'eslint' | 'prettier'
 
@@ -15,7 +16,7 @@ export type ProjectType = {
   project: projectsType
   title?: string
   description: string
-  repository: string
+  repository?: string
   link?: string
   langs: string[]
   platforms: platformsType[]
