@@ -7,6 +7,7 @@ export const ProjectsData: ProjectType[] = [
     title: `Game room`,
     description: `Uma plataforma de jogos`,
     link: `https://game-room.vercel.app`,
+    repository: `https://github.com/AndersonSantos0/game-room`,
     langs: [
       `React.js`,
       `Javascript`,
@@ -15,7 +16,8 @@ export const ProjectsData: ProjectType[] = [
       `Styled-components`,
       `igdb API`
     ],
-    platforms: [`web`, `github`]
+    platforms: [`web`, `github`],
+    goods: [`eslint`, `prettier`]
   },
   {
     id: 1,
